@@ -14,13 +14,13 @@ def RPS_game(user_choice, computer_choice):
         return 1     #-> Scissor wins
     
     elif (user_choice == 'S' and computer_choice == 'R'): # Scissor vs Rock
-        return -1     #-> Rock wins    
+        return -1    #-> Rock wins    
     
     elif (user_choice == 'P' and computer_choice == 'S'): # Paper vs Scissor
-        return -1     #-> Scissor wins
+        return -1    #-> Scissor wins
     
     elif (user_choice == 'R' and computer_choice == 'P'): # Rock vs Paper
-        return -1     #-> Paper wins
+        return -1    #-> Paper wins
 
 play = 0 
 computer_choice = 0    
@@ -58,6 +58,35 @@ while (play>0):
         computer_choice = 'S'
 
     user_choice = input("\n\nEnter R for ROCK, P for PAPER and S for SCISSOR\n")
+    if (user_choice == 'R') and computer_choice == 'R':
+        print ('''You chose rock and computer also chose rock
+   _______        _______
+---'   ____)      (______ '---
+       (_____)   (_____)
+       (_____)   (_____)
+       (____)     (____)
+---.___(___)       (___)___.--
+''')
+    elif (user_choice == 'P'):
+        print ('''You chose Paper
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+''')
+        
+    elif (user_choice == 'S'):
+        print('''You chose Scissor
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+''')
+        
 
     result = RPS_game(user_choice, computer_choice)
     if (result == 0):
@@ -71,7 +100,7 @@ while (play>0):
 
     print("\n############################ Game ends ############################\n")
 
-    play = int(input("\t\tDo you want to play again? \n\t\tEnter 1 for \"YES\" \n\t\tEnter 0 for \"NO\""))
+    play = int(input("\n\t\tDo you want to play again? \n\t\tEnter 1 for \"YES\" \n\t\tEnter 0 for \"NO\""))
 
 
 print("Terminating the Game")
