@@ -2,6 +2,33 @@ import random
 
 def RPS_game(user_choice, computer_choice):
     if (user_choice == computer_choice): # Rock vs Rock or Paper vs Paper or Scisssor vs Scissor
+        if (user_choice == 'R') and (computer_choice == 'R'):
+            print ('''You chose rock and computer also chose rock
+   _______              ________
+---'   ____)          (______  '---
+       (_____)       (_____)
+       (_____)       (_____)
+       (____)         (____)
+---.___(___)           (___)___.--
+''')
+        elif (user_choice == 'P') and (computer_choice == 'P'):
+            print('''You chose paper and computer also chose paper
+    _______                  ______
+---'    ___)____   	    ____(____  '---
+         _______) 	   (_______
+          _______)    (______
+         _______)      (_______
+---.__________)          (_________.---
+''')
+        elif (user_choice == 'S') and (computer_choice == 'S'):
+            print('''You chose scissor and computer also chose scissor
+    _______                 _______
+---'   ____)____       ____(____   '---
+          ______)     (____
+       __________)   (__________
+      (____)               (____)
+---.__(___)                 (___)__.---
+''')
         return 0     #-> No one wins
     
     elif (user_choice == 'R' and computer_choice == 'S'): # Rock vs Scissor
@@ -58,35 +85,6 @@ while (play>0):
         computer_choice = 'S'
 
     user_choice = input("\n\nEnter R for ROCK, P for PAPER and S for SCISSOR\n")
-    if (user_choice == 'R') and computer_choice == 'R':
-        print ('''You chose rock and computer also chose rock
-   _______        _______
----'   ____)      (______ '---
-       (_____)   (_____)
-       (_____)   (_____)
-       (____)     (____)
----.___(___)       (___)___.--
-''')
-    elif (user_choice == 'P'):
-        print ('''You chose Paper
-    _______
----'   ____)____
-          ______)
-          _______)
-         _______)
----.__________)
-''')
-        
-    elif (user_choice == 'S'):
-        print('''You chose Scissor
-    _______
----'   ____)____
-          ______)
-       __________)
-      (____)
----.__(___)
-''')
-        
 
     result = RPS_game(user_choice, computer_choice)
     if (result == 0):
