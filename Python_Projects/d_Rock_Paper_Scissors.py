@@ -4,7 +4,7 @@ def RPS_game(user_choice, computer_choice):
     if (user_choice == computer_choice): # Rock vs Rock or Paper vs Paper or Scisssor vs Scissor
         if (user_choice == 'R') and (computer_choice == 'R'):
             print ('''You chose rock and computer also chose rock
-   _______              ________
+    _______            ________
 ---'   ____)          (______  '---
        (_____)       (_____)
        (_____)       (_____)
@@ -149,6 +149,5 @@ while (play>0):
     print("\n############################ Game ends ############################\n")
 
     play = int(input("\n\t\tDo you want to play again? \n\t\tEnter 1 for \"YES\" \n\t\tEnter 0 for \"NO\"\n"))
-
 
 print("Terminating the Game")
