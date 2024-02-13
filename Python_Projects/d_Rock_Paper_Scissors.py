@@ -4,7 +4,7 @@ def RPS_game(user_choice, computer_choice):
     if (user_choice == computer_choice): # Rock vs Rock or Paper vs Paper or Scisssor vs Scissor
         if (user_choice == 'R') and (computer_choice == 'R'):
             print ('''You chose rock and computer also chose rock
-   _______              ________
+    _______            ________
 ---'   ____)          (______  '---
        (_____)       (_____)
        (_____)       (_____)
@@ -31,22 +31,72 @@ def RPS_game(user_choice, computer_choice):
 ''')
         return 0     #-> No one wins
     
-    elif (user_choice == 'R' and computer_choice == 'S'): # Rock vs Scissor
+    elif (user_choice == 'R' and computer_choice == 'S'):# Rock vs Scissor
+        print('''You chose rock and computer chose scissor
+    _______            _______
+---'   ____)      ____(____   '---
+      (_____)    (______
+      (_____)   (__________
+      (____)         (____)
+---.__(___)            (___)__.---              
+''')
         return 1     #-> Rock wins
     
     elif (user_choice == 'P' and computer_choice == 'R'): # Paper vs Rock
+        print('''You chose paper and computer chose rock
+    _______             _______
+---'   ____)____       (__     '---
+        ________)     (______)
+          _______)    (______)
+        ________)      (_____)
+---.__________)         (___)___.--
+''')
         return 1     #-> Paper wins
     
     elif (user_choice == 'S' and computer_choice == 'P'): # Scissor vs Paper
+        print('''You chose scissor and computer chose paper
+    _______                  _______
+---'   ____)____       _____(____   '---
+          ______)     (_______
+       __________)   (______
+       (____)         (_______
+---.__(___)             (___________.---
+
+''')
         return 1     #-> Scissor wins
     
     elif (user_choice == 'S' and computer_choice == 'R'): # Scissor vs Rock
+        print('''You choose scissor and computer chose rock
+    _______            _______
+---'   ____)____      (__     '---
+          ______)    (______)
+       __________)   (______)
+       (____)         (_____)
+---.__(___)            (___)___.--
+''')
         return -1    #-> Rock wins    
     
     elif (user_choice == 'P' and computer_choice == 'S'): # Paper vs Scissor
+        print('''You chose paper and computer chose scisssor
+    _______                _______
+---'   ____)____      ____(____   '---
+        ________)    (_____
+          _______)  (__________
+        ________)         (____)
+---.__________)            (___)__.---
+
+''')
         return -1    #-> Scissor wins
     
     elif (user_choice == 'R' and computer_choice == 'P'): # Rock vs Paper
+        print('''You chose rock and computer chose paper
+    _______            _______
+---'   ____)      ____(____   '---
+      (_____)    (______
+      (_____)   (_____
+      (____)     (______
+---.__(___)        (__________.---
+''')
         return -1    #-> Paper wins
 
 play = 0 
