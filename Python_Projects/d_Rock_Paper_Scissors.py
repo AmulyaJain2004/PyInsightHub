@@ -113,7 +113,7 @@ print("-> Rock vs Paper -> Paper wins")
 print("-> Rock vs Scissor -> Rock wins")
 print("-> Paper vs Scissor -> Scissor wins")
 print("-> Rock vs Rock or Paper vs Paper or Scisssor vs Scissor -> No one wins")
-print("-> In this game, the user will be asked to make choice and according to the choice of user and computer and then the result will be displayed along with the choices of both computer and user.\n")
+print("-> In this game, the user will be asked to make choice and according to the choice of user and computer, the result will be displayed along with the choices of both computer and user.\n")
 
 print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BEST OF LUCK !! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
 
