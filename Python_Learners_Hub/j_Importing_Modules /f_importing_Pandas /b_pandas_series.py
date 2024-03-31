@@ -3,7 +3,6 @@ import pandas as pd
 # a = [7,5,9]
 # # myvar = pd.Series(a) 
 # myvar = pd.Series(a, index=["p","q","r"]) # set the index of series to "p", "q" and "r". If not given it will be default integer index starting from 0 as we saw in above example.
-
 # print(myvar)
 
 data_list = [10,20,30,40,50]
