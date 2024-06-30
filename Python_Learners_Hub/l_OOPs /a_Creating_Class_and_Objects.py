@@ -12,9 +12,9 @@ class Circle:
         
 def main():
     radius = int(input("Enter the radius of circle: -\n"))
-    
+    # creating instance of class 
     circle = Circle(radius)
-    
+    # applying methods(functions) on class objects/instance 
     print(f"Area of circle is: {circle.area()}")
     
 if __name__ == "__main__":
