@@ -56,3 +56,26 @@ def update_student_patch(request, id):
     
     except Exception as e:
         return Response({'status': 403, 'message': 'invalid id'})
+
+# method 1    
+# @api_view(['DELETE'])
+# def update_student_patch(request, id):
+#     try:    
+#         student_obj = Student.objects.get(id=id)
+#         student_obj.delete()
+#         return Response({'status':200, 'message': 'deleted'})
+
+#     except Exception as e:
+#         return Response({'status': 403, 'message': 'invalid id'})
+    
+    
+@api_view(['DELETE'])
+def update_student_patch(request):
+    try:    
+        id = request.GET.get('id')
+        student_obj = Student.objects.get(id=id)
+        student_obj.delete()
+        return Response({'status':200, 'message': 'deleted'})
+
+    except Exception as e:
+        return Response({'status': 403, 'message': 'invalid id'})
