@@ -11,11 +11,9 @@ class Circle:
         return ((math.pi)*math.pow(self.radius,2))
         
 def main():
-    radius = int(input("Enter the radius of circle: -\n"))
-    # creating instance of class 
-    circle = Circle(radius)
-    # applying methods(functions) on class objects/instance 
-    print(f"Area of circle is: {circle.area()}")
+    radius = int(input("Enter the radius of circle: -\n")) 
+    circle = Circle(radius) # creating instance of class
+    print(f"Area of circle is: {circle.area()}") # applying methods(functions) on class objects/instance 
     
 if __name__ == "__main__":
     main()
