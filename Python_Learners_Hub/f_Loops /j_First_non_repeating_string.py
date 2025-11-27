@@ -5,5 +5,6 @@ def first_non_repeating_char_index (string):
             print("Unique character is:",string[i],"and its index is",i)
     return
 
+
 string = input("Enter the string to find the first non repeating character: \n")
 first_non_repeating_char_index(string)
